@@ -19,7 +19,7 @@ def main_menu():
     
     else:
         filename = time.strftime("file_%Y-%m-%d_%H-%M-%S.log")
-        subprocess.run(['df', '-h'], stdout=open(filename, 'w'))
+        subprocess.run(['df', '-T'], stdout=open(filename, 'w'))
 
 
 def rock_paper_scissors():
